@@ -1,0 +1,28 @@
+{
+   "spring":{
+      "application":{
+         "name":"reconciliation-demo"
+      }
+   },
+	
+	"mongodb": {
+		"profiles":{
+			"active":"integration"
+		},
+		"application":{
+			"name":"reconciliation-demo"
+		},		
+		"data":{
+			"host":"srvpersistenciades.asefa.es",
+			"port":"27017",
+			"database":"shipment"
+		}			
+	},	
+	"endpoint":{
+		"tracking":{
+			"ups":"http://192.168.9.144:10408/etica-service/tarifa/cotizar",
+			"correos":"",
+			"seur":"";
+		}	
+   }
+}
