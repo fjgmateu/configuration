@@ -13,16 +13,23 @@
 			"name":"reconciliation-demo"
 		},		
 		"data":{
-			"host":"srvpersistenciades.asefa.es",
+			"host":"localhost",
 			"port":"27017",
 			"database":"shipment"
 		}			
 	},	
 	"endpoint":{
-		"tracking":{
-			"ups":"http://192.168.9.144:10408/etica-service/tarifa/cotizar",
-			"correos":"",
-			"seur":"";
-		}	
+		"ups":{
+			"tracking":"http://localhost:8056/tracking/{tracking_number}",
+			"event":"http://localhost:8056/events"
+		},
+		"correos":{
+			"tracking":"http://correos.es:8056/tracking/{tracking_number}",
+			"event":"http://correos.es:8056/events"
+		},
+		"seur":{
+		    "tracking":"http://seur.es:8056/tracking/{tracking_number}",
+			"event":"http://seur.es:8056/events"
+		}
    }
 }
