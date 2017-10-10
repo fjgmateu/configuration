@@ -18,6 +18,13 @@
 			"database":"shipment"
 		}			
 	},	
+	
+	"redis": {
+		"data":{
+			"host":"localhost",
+			"port":"6379"
+		}			
+	},	
 	"endpoint":{
 		"ups":{
 			"tracking":"http://localhost:8056/tracking/{tracking_number}",
