@@ -1,0 +1,14 @@
+{
+   "spring":{
+      "application":{
+         "name":"phone-service"
+      },
+	  "data": {
+		"mongodb":{
+			"host":"localhost",
+			"port":"27017",
+			"database":"phone"
+		}			
+	 }
+   }
+}
