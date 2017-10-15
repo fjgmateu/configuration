@@ -10,5 +10,10 @@
 			"database":"phone"
 		}			
 	 }
-   }
+   },
+   "endpoint":{
+		"phone":{
+			"findall":"http://phone-service/phones"
+		}
+	}
 }
