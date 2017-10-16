@@ -1,0 +1,26 @@
+{
+   "spring":{
+      "application":{
+         "name":"order-service"
+      },
+	  "data": {
+		"mongodb":{
+			"host":"ec2-52-14-26-165.us-east-2.compute.amazonaws.com",
+			"port":"27017",
+			"database":"order"
+		}			
+	 }
+   },
+    "endpoint":{
+		"phone":{
+			"findall":"http://phone-service/phones"
+		}
+	},
+	"eureka":{
+      "client":{
+         "serviceUrl":{
+			"defaultZone":"http://ec2-52-14-26-165.us-east-2.compute.amazonaws.com:8761/eureka"
+			}
+		}
+	 }
+}
